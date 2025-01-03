@@ -2,15 +2,13 @@ import 'package:flutter/material.dart';
 
 class AllCulturalScreen extends StatelessWidget {
   final culturalSites = [
-    {'name': 'Machu Picchu', 'description': 'Ancient Inca city in Peru', 'image': 'lib/assets/machu_picchu.jpg'},
-    {'name': 'Great Wall of China', 'description': 'Historic wall stretching across China', 'image': 'lib/assets/great_wall.jpg'},
-    {'name': 'Taj Mahal', 'description': 'Iconic mausoleum in India', 'image': 'lib/assets/taj_mahal.jpg'},
-    {'name': 'Colosseum', 'description': 'Roman amphitheater in Italy', 'image': 'lib/assets/colosseum.jpg'},
-    {'name': 'Petra', 'description': 'Rock-carved city in Jordan', 'image': 'lib/assets/petra.jpg'},
-    {'name': 'Christ the Redeemer', 'description': 'Famous statue in Brazil', 'image': 'lib/assets/christ_redeemer.jpg'},
-    {'name': 'Chichen Itza', 'description': 'Mayan pyramid in Mexico', 'image': 'lib/assets/chichen_itza.jpg'},
-    {'name': 'Acropolis of Athens', 'description': 'Ancient citadel in Greece', 'image': 'lib/assets/acropolis.jpg'},
-  ];
+  {'name': 'Religions', 'description': "There are several religions interwoven into Sri Lanka’s rich tapestry, but Buddhism is the belief system that lies at the core of the island’s complex culture.\n\nThis philosophy swept across Asia more than 2,000 years ago and since then has influenced many elements of the Sri Lankan way of life.\n\nWith hundreds of temples dotted throughout the country, tended by monks dressed in eye-catching saffron robes, you cannot help but notice the presence of Buddhism when you visit Sri Lanka. In addition to the unmissable architecture paying homage to Lord Buddha, the peace, hospitality, and selflessness at the heart of Buddhist teaching permeates every corner of the island.", 'image': 'lib/assets/religion.jpg'},
+  {'name': 'Udarata Dance', 'description': "According to the legend the origin of the dance lies in a dance ritual known as the Kohomba kankariya (named for the deity Kohomba), which is also known as Kohomba yak kankariya or kankariya.\n\nTraditional dance masters believe that originally the king of a place referred to as 'Malaya Rata', and his two brothers performed the first Kohomba kankariya. Some believe that this 'Malaya Rata' was located in India.\n\nAccording to legend, King Malaya came to the island as a result of a trick of the god Śakra in order to cure the king, Panduwasdev, who was suffering from a mysterious illness.\n\nThe king was said to be suffering from a recurring dream in which a leopard was directing its tongue towards the king, believed to be as black magic of Kuveni, the first wife of King Vijaya. After the performance of the Kohomba kankariya the illness vanished, and many natives adopted the dance.", 'image': 'lib/assets/udarata.jpg'},
+  {'name': 'Pahatharata', 'description': "The kolam natima belongs to a different category of ritualised mask dance than the yakun natima. Today it is rarely practised and has been gradually losing its importance over the last hundred years.\n\n The early twentieth century writer Otaker Pertold commented that, even in his day, much of the original import of the dance had been lost, and that on the few occasions that it was still performed it was undertaken by laymen rather than edura or those specifically versed in ritual dances. Because some forty masked characters are involved in this elaborate drama, with commensurate offerings expected for certain devils and demons, Pertold cites the great expense involved in staging a full kolam natima as responsible for its gradual abbreviation.", 'image': 'lib/assets/pahatharata.jpg'},
+  {'name': 'Sambaragamuwa', 'description': " Much like the pahatharata natum (low country dances) of the coastal region and the udarata natum (up country or Kandyan dances) of the hill country, the Sabaragamuwa dance tradition is thus named because it originated in the Sabaragamuwa Province. \n\n The Sabaragamuwa dances, however, don’t get as much recognition as the up country or low country dances. According to Yohan Punchinilame, a lecturer of the Department of Sabaragamuwa dance at the University of Visual and Performing Arts in Colombo, there are four territorial divisions in terms of Sabaragamuwa dance; namely that of the Ratnapura, Kalawana, Balangoda, and Badulla divisions. Each area has a slightly different version of the ritualistic dances that make up the Sabaragamuwa tradition of dance, but Ratnapura has been historically celebrated as the heart of Sabaragamuwa dance in Sri Lanka. “While the district of Kegalle now falls under the Sabaragamuwa province, during the olden days of the kings, Kegalle was a part of the Kandyan Kingdom. ", 'image': 'lib/assets/sambaragamuwa.jpeg'},
+  {'name': 'Theravada Buddhism', 'description': "Theravada Buddhism is a school of Buddhism that originated in India around 500 B.C. and is considered to be the oldest existing school of Buddhism.\n\n  The name Theravada means 'the doctrine of the elders' or 'the way of the elders' in Pali, the sacred language of the school. Theravada Buddhism is practiced in many countries, including: Cambodia, Laos, Myanmar (Burma), Sri Lanka, and Thailand.", 'image': 'lib/assets/theravada buddhism.jpg'},
+ 
+];
 
   @override
   Widget build(BuildContext context) {
@@ -151,7 +149,6 @@ class CulturalDetailPage extends StatelessWidget {
             expandedHeight: 300,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(site['name']!),
               background: Hero(
                 tag: site['name']!,
                 child: Image.asset(
@@ -167,13 +164,13 @@ class CulturalDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'About',
+                    Text(
+                    site['name']!,
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
-                  ),
+                    ),
                   SizedBox(height: 8),
                   Text(
                     site['description']!,
