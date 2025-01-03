@@ -2,14 +2,13 @@ import 'package:flutter/material.dart';
 
 class AllMountainScreen extends StatelessWidget {
  final mountains = [
-   {'name': 'Mount Everest', 'description': 'Highest peak on Earth at 8,848m', 'image': 'lib/assets/everest.jpg'},
-   {'name': 'K2', 'description': 'Second highest peak at 8,611m', 'image': 'lib/assets/k2.jpg'},
-   {'name': 'Kangchenjunga', 'description': 'Third highest peak at 8,586m', 'image': 'lib/assets/kangchenjunga.jpg'},
-   {'name': 'Lhotse', 'description': 'Fourth highest peak at 8,516m', 'image': 'lib/assets/lhotse.jpg'},
-   {'name': 'Makalu', 'description': 'Fifth highest peak at 8,485m', 'image': 'lib/assets/makalu.jpg'},
-   {'name': 'Cho Oyu', 'description': 'Sixth highest peak at 8,188m', 'image': 'lib/assets/cho_oyu.jpg'},
-   {'name': 'Dhaulagiri', 'description': 'Seventh highest peak at 8,167m', 'image': 'lib/assets/dhaulagiri.jpg'},
-   {'name': 'Manaslu', 'description': 'Eighth highest peak at 8,163m', 'image': 'lib/assets/manaslu.jpg'},
+   {'name': 'Mount Everest', 'description': "Pidurutalagala (Sinhala: පිදුරුතලාගල, pronounced [ˌpidurutaˈlaːɡələ], Straw Plateau Rock), or previously Mount Pedro in English, is the highest mountain in Sri Lanka, at 2,524 m (8,281 ft). \n\nIt is situated North-North-East from the town of Nuwara Eliya and is easily visible from most areas of the Central Province. Its summit is home to the central communications array of the Government of Sri Lanka and armed forces and serves as an important point in the country's radar system. The peak is currently designated as an 'ultra-high security zone', and protected by a large military base; the peak is strictly off-limits to the general public.", 'image': 'lib/assets/pidurutalagala.jpg'},
+   {'name': 'rassagala', 'description': "It was the fairyland-like scenery that we had seen from atop Batalegala in our inaugural hike, of a distant water fall gushing down between two rocky ridges that prompted us to hike there one day. That hike made us feel that we should go still beyond to explore the mountain range above the fall.\n\nThus having reached the top of the waterfall one day, we set out to cover the mountain range beyond the waterfall and reach a place called Rassagala. We were treated to a panoramic view of the scenery around from the top of the waterfall, while in the cool refreshing water.", 'image': 'lib/assets/rassagala.jpg'},
+   {'name': 'lakegala', 'description': "Lakegala mountain is situated in Sri Lanka about 175 kilometres (109 mi) away from the capital Colombo. This mountain is situated in Meemure village.\n\nLakegala is situated near the Border between Kandy and Matale Districts. There are several access points to Lakegala rock but the safest access road is from Meemure Village.\n\n'The Rock of Lanka' is the meaning of 'Lakegala' in Sinhala language. The rock is about 1310m high and it is in the Knuckles mountain range aka 'Dumbara Mitiyawatha'.", 'image': 'lib/assets/lakegala.jpg'},
+   {'name': 'knuckles mountain', 'description': "The Dumbara Mountain Range lies in central Sri Lanka, in the Districts of Matale and Kandy.\n\n The Sinhalese residents have traditionally referred to the area as Dumbara Kanduvetiya meaning Mist-laden Mountain Range.\n\n Early British surveyors gave the name knuckles, referring to a series of recumbent folds and peaks in the west of the massif which resemble the knuckles of clenched fist when viewed from certain locations in the Kandy District.", 'image': 'lib/assets/knuckles mountain.jpg'},
+   {'name': 'haggala', 'description': " Hakgala is a mountain situated in the Nuwara Eliya district of Sri Lanka at 2,169 m (7,116 ft) above mean sea level, most parts of the mountain are covered with forest belonging to Hakgala Strict Nature Reserve.\n\n  Hakgala Botanical Garden is situated on the northeastern slope of the Hakgala Mountain. The southwestern side of the mountain has a wet climate compared to the northeastern slope since the southwestern part faces directly to the southwest Monsoon.", 'image': 'lib/assets/haggala.jpg'},
+   {'name': 'namunukula', 'description': "Namunukula, literally 'Nine Peaks' in Sinhala language, is the name of a mountain range in Sri Lanka's province of Uva.\n\n  Its main peak is 2,036 metres (6,679.8 ft) high. The nearby town is also sometimes called Namunukula Town.\n\nDuring the Ming treasure voyages of the 15th century, the Chinese fleet led by Admiral Zheng He made use of this geographical feature in their navigation to Sri Lanka, as the mountain is the first visible landmark of Sri Lanka after departing from Sumatra.", 'image': 'lib/assets/namunukula.jpg'},
+
  ];
 
  @override
@@ -153,7 +152,7 @@ class MountainDetailPage extends StatelessWidget {
            expandedHeight: 300,
            pinned: true,
            flexibleSpace: FlexibleSpaceBar(
-             title: Text(mountain['name']!),
+            //  title: Text(mountain['name']!),
              background: Hero(
                tag: mountain['name']!,
                child: Image.asset(
@@ -170,10 +169,10 @@ class MountainDetailPage extends StatelessWidget {
                crossAxisAlignment: CrossAxisAlignment.start,
                children: [
                  Text(
-                   'About',
+                   mountain['name']!,
                    style: TextStyle(
-                     fontSize: 24,
-                     fontWeight: FontWeight.bold,
+                   fontSize: 24,
+                   fontWeight: FontWeight.bold,
                    ),
                  ),
                  SizedBox(height: 8),
