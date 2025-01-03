@@ -16,17 +16,14 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // AppBar Section
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            // Category Buttons
             Row(
               children: [
-                // Popular Button
                 TextButton(
                   onPressed: () {},
                   child: Text(
@@ -37,7 +34,6 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Featured Button
                 TextButton(
                   onPressed: () {
                     Navigator.push(
@@ -52,7 +48,6 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                // Most Viewed Button
                 TextButton(
                   onPressed: () {
                     Navigator.push(
@@ -69,7 +64,6 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-            // Profile Icon
             CircleAvatar(
               backgroundColor: Colors.grey[200],
               child: Icon(Icons.person, color: Colors.grey[600]),
@@ -82,7 +76,6 @@ class HomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Header Section with Background Image
               Container(
                 height: 250,
                 decoration: BoxDecoration(
@@ -120,7 +113,6 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       const Spacer(),
-                      // Search Bar
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         decoration: BoxDecoration(
@@ -146,7 +138,6 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              // Featured Places Section
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -221,27 +212,27 @@ class HomePage extends StatelessWidget {
                               'title': 'Galle Fort',
                               'location': 'Galle'
                             },
-                             {
+                            {
                               'image': 'lib/assets/thalpe.jpg',
                               'title': 'Galle Fort',
                               'location': 'Galle'
                             },
-                             {
+                            {
                               'image': 'lib/assets/thalpe.jpg',
                               'title': 'Galle Fort',
                               'location': 'Galle'
                             },
-                             {
+                            {
                               'image': 'lib/assets/thalpe.jpg',
                               'title': 'Galle Fort',
                               'location': 'Galle'
                             },
-                             {
+                            {
                               'image': 'lib/assets/thalpe.jpg',
                               'title': 'Galle Fort',
                               'location': 'Galle'
                             },
-                             {
+                            {
                               'image': 'lib/assets/thalpe.jpg',
                               'title': 'Galle Fort',
                               'location': 'Galle'
@@ -303,7 +294,6 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              // Categories Section
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -339,9 +329,9 @@ class HomePage extends StatelessWidget {
                       physics: const NeverScrollableScrollPhysics(),
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 4,
-                        crossAxisSpacing: 14,
-                        mainAxisSpacing: 14,
-                        childAspectRatio: 0.7,
+                        crossAxisSpacing: 10,
+                        mainAxisSpacing: 10,
+                        childAspectRatio: 0.85,
                       ),
                       itemCount: 4,
                       itemBuilder: (context, index) {
@@ -350,96 +340,58 @@ class HomePage extends StatelessWidget {
                           {'image': 'lib/assets/Udawattakele Forest.jpg', 'title': 'Forest'},
                           {'image': 'lib/assets/udawalawa.jpg', 'title': 'Wild Life'},
                           {'image': 'lib/assets/sigiriya.jpg', 'title': 'Historical'},
-                          {'image': 'lib/assets/knuckles mountain.jpg', 'title': 'Mountain'},
-                          {'image': 'lib/assets/c2.jpg', 'title': 'Village'},
-                          {'image': 'lib/assets/c2.jpg', 'title': 'Cultural'},
-                          {'image': 'lib/assets/c2.jpg', 'title': 'Adventure'},
                         ];
                         final category = categories[index];
                         return GestureDetector(
                           onTap: () {
                             switch (category['title']) {
                               case 'Beach':
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => AllBeachScreen()),
-                                );
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => AllBeachScreen()));
                                 break;
                               case 'Forest':
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => AllForestScreen()),
-                                );
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => AllForestScreen()));
                                 break;
                               case 'Wild Life':
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => AllWildLifeScreen()),
-                                );
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => AllWildLifeScreen()));
                                 break;
                               case 'Historical':
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => AllHistoricalScreen()),
-                                );
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => AllHistoricalScreen()));
                                 break;
-                              case 'Mountain':
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => AllMountainScreen()),
-                                );
-                                break;
-                              case 'Village':
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => AllVillageScreen()),
-                                );
-                                break;
-                              case 'Cultural':
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => AllCulturalScreen()),
-                                );
-                                break;
-                              case 'Adventure':
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => AllAdventureScreen()),
-                                );
-                                break;
-                              default:
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => CategoriesScreen()),
-                                );
                             }
                           },
-                          child: Container(
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(16),
-                              image: DecorationImage(
-                                image: AssetImage(category['image']!),
-                                fit: BoxFit.cover,
-                              ),
+                          child: Card(
+                            elevation: 2,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
                             ),
-                            child: Stack(
+                            child: Column(
                               children: [
-                                Positioned(
-                                  bottom: 8,
-                                  left: 8,
-                                  right: 8,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        category['title']!,
-                                        style: const TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 14,
-                                        ),
+                                Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
+                                      image: DecorationImage(
+                                        image: AssetImage(category['image']!),
+                                        fit: BoxFit.cover,
                                       ),
-                                    ],
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  flex: 1,
+                                  child: Container(
+                                    padding: EdgeInsets.all(4),
+                                    child: Text(
+                                      category['title']!,
+                                      style: TextStyle(
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
                                   ),
                                 ),
                               ],

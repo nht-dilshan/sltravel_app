@@ -19,7 +19,7 @@ class _AllPlacesScreenState extends State<AllPlacesScreen> {
     {'name': 'Cities', 'description': 'Modern city experiences', 'image': 'lib/assets/thalpe.jpg'},
     {'name': 'Food', 'description': 'Local culinary delights', 'image': 'lib/assets/thalpe.jpg'},
     {'name': 'Culture', 'description': 'Traditional cultural sites', 'image': 'lib/assets/thalpe.jpg'},
-     {'name': 'Beach', 'description': 'Beautiful beaches in Sri Lanka', 'image': 'lib/assets/thalpe.jpg'},
+    {'name': 'Beach', 'description': 'Beautiful beaches in Sri Lanka', 'image': 'lib/assets/thalpe.jpg'},
     {'name': 'Wildlife', 'description': 'Amazing wildlife experiences', 'image': 'lib/assets/thalpe.jpg'},
     {'name': 'Heritage', 'description': 'Rich cultural heritage sites', 'image': 'lib/assets/thalpe.jpg'},
     {'name': 'Waterfalls', 'description': 'Stunning waterfalls', 'image': 'lib/assets/thalpe.jpg'},
@@ -175,7 +175,6 @@ class PlaceDetailPage extends StatelessWidget {
             expandedHeight: 300,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(place['name']!),
               background: Hero(
                 tag: place['name']!,
                 child: Image.asset(
@@ -191,13 +190,13 @@ class PlaceDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'About',
+                    Text(
+                    place['name']!,
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
-                  ),
+                    ),
                   SizedBox(height: 8),
                   Text(
                     place['description']!,

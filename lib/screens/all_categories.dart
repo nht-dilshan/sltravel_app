@@ -10,14 +10,46 @@ import 'all_wild_life.dart';
 
 class CategoriesScreen extends StatelessWidget {
   final categories = [
-    {'image': 'lib/assets/beach.jpg', 'title': 'Beach'},
-    {'image': 'lib/assets/Udawattakele Forest.jpg', 'title': 'Forest'},
-    {'image': 'lib/assets/udawalawa.jpg', 'title': 'Wild Life'},
-    {'image': 'lib/assets/sigiriya.jpg', 'title': 'Historical'},
-    {'image': 'lib/assets/knuckles mountain.jpg', 'title': 'Mountain'},
-    {'image': 'lib/assets/c2.jpg', 'title': 'Village'},
-    {'image': 'lib/assets/c2.jpg', 'title': 'Cultural'},
-    {'image': 'lib/assets/c2.jpg', 'title': 'Adventure'},
+    {
+      'image': 'lib/assets/beach.jpg',
+      'title': 'Beach',
+      'subtitle': 'Beach Category'
+    },
+    {
+      'image': 'lib/assets/Udawattakele Forest.jpg',
+      'title': 'Forest',
+      'subtitle': 'Forest Category'
+    },
+    {
+      'image': 'lib/assets/udawalawa.jpg',
+      'title': 'Wild Life',
+      'subtitle': 'Wild Life Category'
+    },
+    {
+      'image': 'lib/assets/sigiriya.jpg',
+      'title': 'Historical',
+      'subtitle': 'Historical Category'
+    },
+    {
+      'image': 'lib/assets/knuckles mountain.jpg',
+      'title': 'Mountain',
+      'subtitle': 'Mountain Category'
+    },
+    {
+      'image': 'lib/assets/c2.jpg',
+      'title': 'Village',
+      'subtitle': 'Village Category'
+    },
+    {
+      'image': 'lib/assets/udarata.jpg',
+      'title': 'Cultural',
+      'subtitle': 'Cultural Category'
+    },
+    {
+      'image': 'lib/assets/c2.jpg',
+      'title': 'Adventure',
+      'subtitle': 'Adventure Category'
+    },
   ];
 
   @override
@@ -38,6 +70,7 @@ class CategoriesScreen extends StatelessWidget {
           crossAxisCount: 2,
           crossAxisSpacing: 16,
           mainAxisSpacing: 16,
+          childAspectRatio: 0.75,
         ),
         itemCount: categories.length,
         itemBuilder: (context, index) {
@@ -93,42 +126,54 @@ class CategoriesScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => AllAdventureScreen()),
                   );
                   break;
-                default:
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => PlaceDetailPage(
-                        place: category,
-                        heroTag: '${category['title']}_$index',
-                      ),
-                    ),
-                  );
               }
             },
-            child: Container(
-              decoration: BoxDecoration(
+            child: Card(
+              elevation: 4,
+              shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
-                image: DecorationImage(
-                  image: AssetImage(category['image']!),
-                  fit: BoxFit.cover,
-                ),
               ),
-              child: Stack(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Positioned(
-                    bottom: 16,
-                    left: 16,
-                    child: Text(
-                      category['title']!,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        shadows: [
-                          Shadow(
-                            blurRadius: 10.0,
-                            color: Colors.black,
-                            offset: Offset(2.0, 2.0),
+                  Expanded(
+                    flex: 3,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.vertical(
+                          top: Radius.circular(16),
+                        ),
+                        image: DecorationImage(
+                          image: AssetImage(category['image']!),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    flex: 1,
+                    child: Container(
+                      padding: EdgeInsets.all(8),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            category['title']!,
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          SizedBox(height: 4),
+                          Text(
+                            category['subtitle']!,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Colors.grey,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ],
                       ),
@@ -139,44 +184,6 @@ class CategoriesScreen extends StatelessWidget {
             ),
           );
         },
-      ),
-    );
-  }
-}
-
-class PlaceDetailPage extends StatelessWidget {
-  final Map<String, String> place;
-  final String heroTag;
-
-  const PlaceDetailPage({Key? key, required this.place, required this.heroTag})
-      : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(place['title']!),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Hero(
-              tag: heroTag,
-              child: Image.asset(place['image']!),
-            ),
-            SizedBox(height: 16),
-            Text(
-              place['title']!,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 8),
-            Text(
-              'Description of ${place['title']}',
-              style: TextStyle(fontSize: 16, color: Colors.grey),
-            ),
-          ],
-        ),
       ),
     );
   }
