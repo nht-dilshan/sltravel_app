@@ -151,7 +151,6 @@ class ForestDetailPage extends StatelessWidget {
            expandedHeight: 300,
            pinned: true,
            flexibleSpace: FlexibleSpaceBar(
-             title: Text(forest['name']!),
              background: Hero(
                tag: forest['name']!,
                child: Image.asset(
@@ -168,10 +167,10 @@ class ForestDetailPage extends StatelessWidget {
                crossAxisAlignment: CrossAxisAlignment.start,
                children: [
                  Text(
-                   'About',
+                   forest['name']!,
                    style: TextStyle(
-                     fontSize: 24,
-                     fontWeight: FontWeight.bold,
+                   fontSize: 24,
+                   fontWeight: FontWeight.bold,
                    ),
                  ),
                  SizedBox(height: 8),
