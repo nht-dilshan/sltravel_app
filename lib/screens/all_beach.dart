@@ -7,14 +7,14 @@ class AllBeachScreen extends StatefulWidget {
 
 class _AllBeachScreenState extends State<AllBeachScreen> {
   final List<Map<String, String>> beaches = [
-    {'name': 'hambanthota', 'description': 'Hambantota beach is a scenic area. Ample parking available as well. However it is highly recommended not to get in to the sea for bathing. ', 'image': 'lib/assets/hambanthota.jpeg'},
+    {'name': 'Hambanthota', 'description': 'Hambantota beach is a scenic area. Ample parking available as well. However it is highly recommended not to get in to the sea for bathing.', 'image': 'lib/assets/hambanthota.jpeg'},
     {'name': 'Bentota', 'description': 'This beach has miles of golden sand and calm waters from the Indian Ocean.', 'image': 'lib/assets/benthota.jpg'},
     {'name': 'Mirissa', 'description': 'A popular destination for surfers and budget travelers, Mirissa has a crescent bay with shallow water and an on-duty lifeguard.', 'image': 'lib/assets/mirissa.jpg'},
-    {'name': 'Unawatuna', 'description': ' good choice for families, this beach is accessible by a small road lined with shops and restaurants. ', 'image': 'lib/assets/Unawatuna.jpg'},
-    {'name': 'godawaya', 'description': 'A clam beach with a small fishing harbor. Quite nice in the morning because the sailors are coming back from the sea.', 'image': 'lib/assets/godawaya.jpg'},
-    {'name': 'South Beach', 'description': 'Vibrant beach in Miami, USA', 'image': 'lib/assets/southbeach.jpg'},
-    {'name': 'Venice Beach', 'description': 'Unique beach in California, USA', 'image': 'lib/assets/venice.jpg'},
-    {'name': 'Malibu Beach', 'description': 'Exclusive beach in California, USA', 'image': 'lib/assets/malibu.jpg'},
+    {'name': 'Unawatuna', 'description': 'Good choice for families, this beach is accessible by a small road lined with shops and restaurants.', 'image': 'lib/assets/Unawatuna.jpg'},
+    {'name': 'Godawaya', 'description': 'A calm beach with a small fishing harbor. Quite nice in the morning because the sailors are coming back from the sea.', 'image': 'lib/assets/godawaya.jpg'},
+    {'name': 'Ussangoda', 'description': 'Very ancient scenic beach. Very beautiful location near Nonagama town. Location can be accessed via vehicle. Very nice environment.', 'image': 'lib/assets/ussangoda.jpg'},
+    {'name': 'Tangalle Beach', 'description': 'Tangalla beach is also the most attractive beach among local and foreign tourists. A coral reef has distributed along the coastal area and as well as rocky shore.', 'image': 'lib/assets/thangalla.jpg'},
+    {'name': 'Nilwella Blue Beach', 'description': 'Blue Beach Island is a beach camping spot in Nilwella, near Dikwella. It is a private island giving amazing views of the sunset in southern Sri Lanka.', 'image': 'lib/assets/nilwella.jpeg'},
   ];
 
   @override
@@ -164,7 +164,7 @@ class BeachDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                    Text(
+                  Text(
                     beach['name']!,
                     style: TextStyle(
                       fontSize: 24,

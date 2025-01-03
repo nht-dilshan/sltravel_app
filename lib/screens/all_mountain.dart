@@ -17,7 +17,7 @@ class AllMountainScreen extends StatelessWidget {
    return Scaffold(
      appBar: AppBar(
        backgroundColor: Colors.white,
-       elevation: 0,
+       elevation: 0, 
        title: Row(
          mainAxisAlignment: MainAxisAlignment.spaceBetween,
          children: [

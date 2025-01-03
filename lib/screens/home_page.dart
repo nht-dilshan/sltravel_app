@@ -323,7 +323,7 @@ class HomePage extends StatelessWidget {
                         final categories = [
                           {'image': 'lib/assets/beach.jpg', 'title': 'Beach'},
                           {'image': 'lib/assets/c2.jpg', 'title': 'Forest'},
-                          {'image': 'lib/assets/c2.jpg', 'title': 'Wild Life'},
+                          {'image': 'lib/assets/udawalawa.jpg', 'title': 'Wild Life'},
                           {'image': 'lib/assets/c2.jpg', 'title': 'Historical'},
                           {'image': 'lib/assets/c2.jpg', 'title': 'Mountain'},
                           {'image': 'lib/assets/c2.jpg', 'title': 'Village'},

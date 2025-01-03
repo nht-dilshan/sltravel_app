@@ -61,7 +61,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   
   assets:
-
     - lib/assets/small_image.jpg
     - lib/assets/apple.png
     - lib/assets/facebook.png
@@ -76,7 +75,17 @@ flutter:
     - lib/assets/mirissa.jpg
     - lib/assets/Unawatuna.jpg
     - lib/assets/godawaya.jpg
-    
+    - lib/assets/ussangoda.jpg
+    - lib/assets/thangalla.jpg
+    - lib/assets/nilwella.jpeg
+    - lib/assets/wasgamuwa.jpg
+    - lib/assets/minneriya.jpg
+    - lib/assets/sigiriya.jpg
+    - lib/assets/ELLAROCK.jpg
+    - lib/assets/maduru oya.jpg
+    - lib/assets/Tea plantation ella.png
+    - lib/assets/yala.jpg
+    - lib/assets/udawalawa.jpg
 
 
   
