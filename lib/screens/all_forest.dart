@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 
 class AllForestScreen extends StatelessWidget {
  final forests = [
-   {'name': 'Amazon Rainforest', 'description': 'The largest rainforest on Earth', 'image': 'lib/assets/amazon.jpg'},
-   {'name': 'Black Forest', 'description': 'A mountainous region in Germany', 'image': 'lib/assets/black_forest.jpg'},
-   {'name': 'Daintree Rainforest', 'description': 'A tropical rainforest in Australia', 'image': 'lib/assets/daintree.jpg'},
-   {'name': 'Redwood National Park', 'description': 'Home to giant redwood trees', 'image': 'lib/assets/redwood.jpg'},
-   {'name': 'Tongass National Forest', 'description': 'The largest forest in the USA', 'image': 'lib/assets/tongass.jpg'},
-   {'name': 'Sundarbans', 'description': 'The largest tidal halophytic forest', 'image': 'lib/assets/sundarbans.jpg'},
-   {'name': 'Monteverde Cloud Forest', 'description': 'A unique cloud forest in Costa Rica', 'image': 'lib/assets/monteverde.jpg'},
-   {'name': 'Borneo Rainforest', 'description': 'One of the oldest rainforests in the world', 'image': 'lib/assets/borneo.jpg'},
+   {'name': 'Sinharaja Forest', 'description': 'SINHARAJA RAIN FOREST is a world heritage and bio diversity hotspot which is also a major eco tourism destination in Sri Lanka.', 'image': 'lib/assets/sinharaja.jpeg'},
+   {'name': 'Udawattakele Forest', 'description': 'Udawattakele Forest Reserve often spelled as Udawatta Kele, is a historic forest reserve on a hill-ridge in the city of Kandy. ', 'image': 'lib/assets/Udawattakele Forest.jpg'},
+   {'name': 'Riverstone', 'description': 'Travelling further upstream on this very scenic stream will no doubt will make you feel refreshed and rejuvenated.', 'image': 'lib/assets/Riverstone.jpg'},
+   {'name': 'Kanneliya Rain Forest', 'description': 'Kanneliya Forest Reserve Experience the feeling of walking in a tropical rain forest.', 'image': 'lib/assets/Kanneliya Rain Forest.avif'},
+   {'name': 'sooriyakanda', 'description': 'The Sooriyakanda mass grave is the mass burial ground of murdered school children from Embilipitiya Maha Vidyalaya (Embilipitiya High School) in Sri Lanka.', 'image': 'lib/assets/sooriyakanda.jpg'},
+   
  ];
 
  @override

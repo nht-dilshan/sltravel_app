@@ -11,7 +11,7 @@ import 'all_wild_life.dart';
 class CategoriesScreen extends StatelessWidget {
   final categories = [
     {'image': 'lib/assets/beach.jpg', 'title': 'Beach'},
-    {'image': 'lib/assets/c2.jpg', 'title': 'Forest'},
+    {'image': 'lib/assets/Udawattakele Forest.jpg', 'title': 'Forest'},
     {'image': 'lib/assets/udawalawa.jpg', 'title': 'Wild Life'},
     {'image': 'lib/assets/c2.jpg', 'title': 'Historical'},
     {'image': 'lib/assets/c2.jpg', 'title': 'Mountain'},
