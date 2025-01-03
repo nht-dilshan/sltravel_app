@@ -13,7 +13,7 @@ class CategoriesScreen extends StatelessWidget {
     {'image': 'lib/assets/beach.jpg', 'title': 'Beach'},
     {'image': 'lib/assets/Udawattakele Forest.jpg', 'title': 'Forest'},
     {'image': 'lib/assets/udawalawa.jpg', 'title': 'Wild Life'},
-    {'image': 'lib/assets/c2.jpg', 'title': 'Historical'},
+    {'image': 'lib/assets/sigiriya.jpg', 'title': 'Historical'},
     {'image': 'lib/assets/knuckles mountain.jpg', 'title': 'Mountain'},
     {'image': 'lib/assets/c2.jpg', 'title': 'Village'},
     {'image': 'lib/assets/c2.jpg', 'title': 'Cultural'},
