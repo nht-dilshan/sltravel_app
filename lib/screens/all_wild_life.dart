@@ -153,7 +153,6 @@ class ParkDetailPage extends StatelessWidget {
             expandedHeight: 300,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(park['name']!),
               background: Hero(
                 tag: park['name']!,
                 child: Image.asset(
@@ -169,13 +168,13 @@ class ParkDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'About',
+                    Text(
+                    park['name']!,
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
-                  ),
+                    ),
                   SizedBox(height: 8),
                   Text(
                     park['description']!,
