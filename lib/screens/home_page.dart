@@ -191,6 +191,7 @@ class HomePage extends StatelessWidget {
                               'image': 'lib/assets/thalpe.jpg',
                               'title': 'Coconut Tree Hill',
                               'location': 'Mirissa'
+                              
                             },
                             {
                               'image': 'lib/assets/thalpe.jpg',
