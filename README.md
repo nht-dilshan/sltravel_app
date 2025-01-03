@@ -20,4 +20,4 @@ A Flutter-based mobile application designed to explore popular travel destinatio
 ## Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/travel_app.git
+   git clone https://github.com/nht-dilshan/sltravel_app.git
