@@ -62,11 +62,11 @@ class _SignUpPageState extends State<SignUpPage> {
                     Align(
                       alignment: Alignment.centerRight,
                       child: Text(
-                      'Sign Up          ',
+                      'Sign Up  ',
                       style: TextStyle(
                         fontSize: 42,
                         fontWeight: FontWeight.bold,
-                        decoration: TextDecoration.underline,
+                        // decoration: TextDecoration.underline,
                       ),
                       ),
                     ),

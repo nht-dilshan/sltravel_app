@@ -30,7 +30,7 @@ class _SignInPageState extends State<SignInPage> {
             // Background circle image
             Positioned(
               top: 30,
-              left: 400,
+              left: 250,
               child: Container(
                 width: 300,
                 height: 300,
@@ -58,16 +58,16 @@ class _SignInPageState extends State<SignInPage> {
                     Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'Sign In',
+                        '  Sign In',
                         style: TextStyle(
                           fontSize: 42,
                           fontWeight: FontWeight.bold,
-                          decoration: TextDecoration.underline,
+                          // decoration: TextDecoration.underline,
                         ),
                       ),
                     ),
                     
-                    const SizedBox(height: 160),
+                    const SizedBox(height: 180),
 
                     // Email field
                     TextFormField(

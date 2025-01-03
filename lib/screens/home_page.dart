@@ -190,10 +190,10 @@ class HomePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     SizedBox(
-                      height: 200,
+                      height: 280,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: 5,
+                        itemCount: 10,
                         itemBuilder: (context, index) {
                           final places = [
                             {
@@ -217,6 +217,31 @@ class HomePage extends StatelessWidget {
                               'location': 'Yala'
                             },
                             {
+                              'image': 'lib/assets/thalpe.jpg',
+                              'title': 'Galle Fort',
+                              'location': 'Galle'
+                            },
+                             {
+                              'image': 'lib/assets/thalpe.jpg',
+                              'title': 'Galle Fort',
+                              'location': 'Galle'
+                            },
+                             {
+                              'image': 'lib/assets/thalpe.jpg',
+                              'title': 'Galle Fort',
+                              'location': 'Galle'
+                            },
+                             {
+                              'image': 'lib/assets/thalpe.jpg',
+                              'title': 'Galle Fort',
+                              'location': 'Galle'
+                            },
+                             {
+                              'image': 'lib/assets/thalpe.jpg',
+                              'title': 'Galle Fort',
+                              'location': 'Galle'
+                            },
+                             {
                               'image': 'lib/assets/thalpe.jpg',
                               'title': 'Galle Fort',
                               'location': 'Galle'
@@ -318,7 +343,7 @@ class HomePage extends StatelessWidget {
                         mainAxisSpacing: 14,
                         childAspectRatio: 0.7,
                       ),
-                      itemCount: 8,
+                      itemCount: 4,
                       itemBuilder: (context, index) {
                         final categories = [
                           {'image': 'lib/assets/beach.jpg', 'title': 'Beach'},
