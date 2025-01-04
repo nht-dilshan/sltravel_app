@@ -118,6 +118,9 @@ flutter:
     - lib/assets/pahatharata.jpg
     - lib/assets/udarata.jpg
     - lib/assets/religion.jpg
+    - lib/assets/red_masjid.jpg
+    - lib/assets/koneswaram_temple.jpg
+    - lib/assets/thewatta_church.jpg
     
 
 
