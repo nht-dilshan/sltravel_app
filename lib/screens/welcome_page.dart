@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart'; 
+import 'home_page.dart';
 import 'signin_page.dart';
-import 'signup_page.dart';// Add this import
+import 'signup_page.dart'; // Add this import
 
 void main() {
   runApp(MyApp());
@@ -29,7 +29,8 @@ class WelcomePage extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 118,
-              backgroundImage: AssetImage('lib/assets/small_image.jpg'), // Replace with your asset image path
+              backgroundImage: AssetImage(
+                  'lib/assets/small_image.jpg'), // Replace with your asset image path
             ),
             SizedBox(height: 20),
             Text(
@@ -93,10 +94,10 @@ class WelcomePage extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SignInPage()),
-                ); // Add navigation to Sign In page
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignInPage()),
+                    ); // Add navigation to Sign In page
                   },
                   child: Text(
                     'SIGN IN',

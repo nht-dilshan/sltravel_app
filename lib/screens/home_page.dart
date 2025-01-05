@@ -38,7 +38,8 @@ class HomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => AllPlacesScreen()),
+                      MaterialPageRoute(
+                          builder: (context) => AllPlacesScreen()),
                     );
                   },
                   child: Text(
@@ -52,7 +53,8 @@ class HomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => CategoriesScreen()),
+                      MaterialPageRoute(
+                          builder: (context) => CategoriesScreen()),
                     );
                   },
                   child: Text(
@@ -169,7 +171,8 @@ class HomePage extends StatelessWidget {
                           onPressed: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => AllPlacesScreen()),
+                              MaterialPageRoute(
+                                  builder: (context) => AllPlacesScreen()),
                             );
                           },
                           child: Text(
@@ -191,7 +194,6 @@ class HomePage extends StatelessWidget {
                               'image': 'lib/assets/thalpe.jpg',
                               'title': 'Coconut Tree Hill',
                               'location': 'Mirissa'
-                              
                             },
                             {
                               'image': 'lib/assets/thalpe.jpg',
@@ -245,7 +247,8 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => PlaceDetailPage(place: place),
+                                  builder: (context) =>
+                                      PlaceDetailPage(place: place),
                                 ),
                               );
                             },
@@ -265,7 +268,8 @@ class HomePage extends StatelessWidget {
                                     bottom: 10,
                                     left: 16,
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           place['title']!,
@@ -314,7 +318,8 @@ class HomePage extends StatelessWidget {
                           onPressed: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => CategoriesScreen()),
+                              MaterialPageRoute(
+                                  builder: (context) => CategoriesScreen()),
                             );
                           },
                           child: Text(
@@ -328,7 +333,8 @@ class HomePage extends StatelessWidget {
                     GridView.builder(
                       shrinkWrap: true,
                       physics: const NeverScrollableScrollPhysics(),
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 4,
                         crossAxisSpacing: 10,
                         mainAxisSpacing: 10,
@@ -338,25 +344,50 @@ class HomePage extends StatelessWidget {
                       itemBuilder: (context, index) {
                         final categories = [
                           {'image': 'lib/assets/beach.jpg', 'title': 'Beach'},
-                          {'image': 'lib/assets/Udawattakele Forest.jpg', 'title': 'Forest'},
-                          {'image': 'lib/assets/udawalawa.jpg', 'title': 'Wild Life'},
-                          {'image': 'lib/assets/sigiriya.jpg', 'title': 'Historical'},
+                          {
+                            'image': 'lib/assets/Udawattakele Forest.jpg',
+                            'title': 'Forest'
+                          },
+                          {
+                            'image': 'lib/assets/udawalawa.jpg',
+                            'title': 'Wild Life'
+                          },
+                          {
+                            'image': 'lib/assets/sigiriya.jpg',
+                            'title': 'Historical'
+                          },
                         ];
                         final category = categories[index];
                         return GestureDetector(
                           onTap: () {
                             switch (category['title']) {
                               case 'Beach':
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => AllBeachScreen()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            AllBeachScreen()));
                                 break;
                               case 'Forest':
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => AllForestScreen()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            AllForestScreen()));
                                 break;
                               case 'Wild Life':
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => AllWildLifeScreen()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            AllWildLifeScreen()));
                                 break;
                               case 'Historical':
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => AllHistoricalScreen()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            AllHistoricalScreen()));
                                 break;
                             }
                           },
@@ -371,7 +402,8 @@ class HomePage extends StatelessWidget {
                                   flex: 3,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
+                                      borderRadius: BorderRadius.vertical(
+                                          top: Radius.circular(12)),
                                       image: DecorationImage(
                                         image: AssetImage(category['image']!),
                                         fit: BoxFit.cover,

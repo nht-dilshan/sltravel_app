@@ -46,7 +46,7 @@ class CategoriesScreen extends StatelessWidget {
       'subtitle': 'Cultural Category'
     },
     {
-      'image': 'lib/assets/c2.jpg',
+      'image': 'lib/assets/adventure.jpg',
       'title': 'Adventure',
       'subtitle': 'Adventure Category'
     },
@@ -93,19 +93,22 @@ class CategoriesScreen extends StatelessWidget {
                 case 'Wild Life':
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => AllWildLifeScreen()),
+                    MaterialPageRoute(
+                        builder: (context) => AllWildLifeScreen()),
                   );
                   break;
                 case 'Historical':
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => AllHistoricalScreen()),
+                    MaterialPageRoute(
+                        builder: (context) => AllHistoricalScreen()),
                   );
                   break;
                 case 'Mountain':
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => AllMountainScreen()),
+                    MaterialPageRoute(
+                        builder: (context) => AllMountainScreen()),
                   );
                   break;
                 case 'Village':
@@ -117,13 +120,15 @@ class CategoriesScreen extends StatelessWidget {
                 case 'Cultural':
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => AllCulturalScreen()),
+                    MaterialPageRoute(
+                        builder: (context) => AllCulturalScreen()),
                   );
                   break;
                 case 'Adventure':
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => AllAdventureScreen()),
+                    MaterialPageRoute(
+                        builder: (context) => AllAdventureScreen()),
                   );
                   break;
               }

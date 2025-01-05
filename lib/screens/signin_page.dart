@@ -43,7 +43,7 @@ class _SignInPageState extends State<SignInPage> {
                 ),
               ),
             ),
-            
+
             SingleChildScrollView(
               padding: const EdgeInsets.all(24.0),
               child: Form(
@@ -53,7 +53,7 @@ class _SignInPageState extends State<SignInPage> {
                   children: [
                     // Add spacing for background image
                     SizedBox(height: 120),
-                    
+
                     // Sign In text - aligned to left
                     Align(
                       alignment: Alignment.centerLeft,
@@ -66,7 +66,7 @@ class _SignInPageState extends State<SignInPage> {
                         ),
                       ),
                     ),
-                    
+
                     const SizedBox(height: 180),
 
                     // Email field
@@ -175,7 +175,8 @@ class _SignInPageState extends State<SignInPage> {
                           onPressed: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => SignUpPage()),
+                              MaterialPageRoute(
+                                  builder: (context) => SignUpPage()),
                             );
                           },
                           child: Text(

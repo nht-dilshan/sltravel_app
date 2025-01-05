@@ -2,15 +2,55 @@ import 'package:flutter/material.dart';
 
 class AllWildLifeScreen extends StatelessWidget {
   final wildLifeParks = [
-    {'name': 'udawalawa', 'description': 'Udawalawe National Park is a destination to see elephants. Other animals in the park include leopards, jungle cats, monkeys.', 'image': 'lib/assets/udawalawa.jpg'},
-    {'name': 'Yala National Park', 'description': 'Spot the almighty leopard in this safari adventure at Yala National Park. Take an adventure to see elephants, buffalo, snakes, sloths, jackals, and more.', 'image': 'lib/assets/yala.jpg'},
-    {'name': 'Tea Plantation ella', 'description': 'You can walk through the tea estates in Ella as it is enriched with full of tea plantations. You will see the pluckers are busy with their jobs.', 'image': 'lib/assets/Tea plantation ella.png'},
-    {'name': 'maduru oya national park', 'description': "The park lies entirely in the dry zone although the park's southern boundary is near the intermediate zone.", 'image': 'lib/assets/maduru oya.jpg'},
-    {'name': 'ella rock', 'description': 'Discover the three iconic sights in Ella on this full day organized tour. Your guide and driver will take you from point to point, explaining the history and significance of each.', 'image': 'lib/assets/ELLAROCK.jpg'},
-    {'name': 'sigiriya', 'description': "Visit two of Sri Lanka's most important UNESCO World Heritage Sites in just one day with this guided trip to Dambulla and Sigiriya Rock.", 'image': 'lib/assets/sigiriya.jpg'},
-    {'name': 'minneriya', 'description': "Visit either Minneriya National Park or Kaudulla National Park during this full-day private tour.", 'image': 'lib/assets/minneriya.jpg'},
-    {'name': 'Wasgamuwa National Park', 'description': "Experience the magic of Wasgamuwa National Park on this safari. See the famous Sri Lankan elephants, and catch sight of a huge range of native bird species.", 'image': 'lib/assets/wasgamuwa.jpg'},
-];
+    {
+      'name': 'udawalawa',
+      'description':
+          'Udawalawe National Park is a destination to see elephants. Other animals in the park include leopards, jungle cats, monkeys.',
+      'image': 'lib/assets/udawalawa.jpg'
+    },
+    {
+      'name': 'Yala National Park',
+      'description':
+          'Spot the almighty leopard in this safari adventure at Yala National Park. Take an adventure to see elephants, buffalo, snakes, sloths, jackals, and more.',
+      'image': 'lib/assets/yala.jpg'
+    },
+    {
+      'name': 'Tea Plantation ella',
+      'description':
+          'You can walk through the tea estates in Ella as it is enriched with full of tea plantations. You will see the pluckers are busy with their jobs.',
+      'image': 'lib/assets/Tea plantation ella.png'
+    },
+    {
+      'name': 'maduru oya national park',
+      'description':
+          "The park lies entirely in the dry zone although the park's southern boundary is near the intermediate zone.",
+      'image': 'lib/assets/maduru oya.jpg'
+    },
+    {
+      'name': 'ella rock',
+      'description':
+          'Discover the three iconic sights in Ella on this full day organized tour. Your guide and driver will take you from point to point, explaining the history and significance of each.',
+      'image': 'lib/assets/ELLAROCK.jpg'
+    },
+    {
+      'name': 'sigiriya',
+      'description':
+          "Visit two of Sri Lanka's most important UNESCO World Heritage Sites in just one day with this guided trip to Dambulla and Sigiriya Rock.",
+      'image': 'lib/assets/sigiriya.jpg'
+    },
+    {
+      'name': 'minneriya',
+      'description':
+          "Visit either Minneriya National Park or Kaudulla National Park during this full-day private tour.",
+      'image': 'lib/assets/minneriya.jpg'
+    },
+    {
+      'name': 'Wasgamuwa National Park',
+      'description':
+          "Experience the magic of Wasgamuwa National Park on this safari. See the famous Sri Lankan elephants, and catch sight of a huge range of native bird species.",
+      'image': 'lib/assets/wasgamuwa.jpg'
+    },
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -56,9 +96,11 @@ class AllWildLifeScreen extends StatelessWidget {
                     PageRouteBuilder(
                       pageBuilder: (context, animation, secondaryAnimation) =>
                           ParkDetailPage(park: park),
-                      transitionsBuilder: (context, animation, secondaryAnimation, child) {
-                        var tween = Tween(begin: Offset(1.0, 0.0), end: Offset.zero)
-                            .chain(CurveTween(curve: Curves.easeInOut));
+                      transitionsBuilder:
+                          (context, animation, secondaryAnimation, child) {
+                        var tween =
+                            Tween(begin: Offset(1.0, 0.0), end: Offset.zero)
+                                .chain(CurveTween(curve: Curves.easeInOut));
                         return SlideTransition(
                           position: animation.drive(tween),
                           child: child,
@@ -168,13 +210,13 @@ class ParkDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                    Text(
+                  Text(
                     park['name']!,
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
-                    ),
+                  ),
                   SizedBox(height: 8),
                   Text(
                     park['description']!,

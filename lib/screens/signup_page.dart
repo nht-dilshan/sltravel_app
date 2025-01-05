@@ -33,10 +33,10 @@ class _SignUpPageState extends State<SignUpPage> {
           children: [
             // Background circle image positioned partially off-screen
             Positioned(
-              top: 30,  // Move up to show only part of the image
+              top: 30, // Move up to show only part of the image
               left: -100, // Move left to show only part of the image
               child: Container(
-                width: 300,  // Larger size to ensure enough image is visible
+                width: 300, // Larger size to ensure enough image is visible
                 height: 300,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
@@ -47,7 +47,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 ),
               ),
             ),
-            
+
             SingleChildScrollView(
               padding: const EdgeInsets.all(24.0),
               child: Form(
@@ -57,20 +57,20 @@ class _SignUpPageState extends State<SignUpPage> {
                   children: [
                     // Add spacing to account for the background image
                     SizedBox(height: 120),
-                    
+
                     // Sign Up text - aligned to right
                     Align(
                       alignment: Alignment.centerRight,
                       child: Text(
-                      'Sign Up  ',
-                      style: TextStyle(
-                        fontSize: 42,
-                        fontWeight: FontWeight.bold,
-                        // decoration: TextDecoration.underline,
-                      ),
+                        'Sign Up  ',
+                        style: TextStyle(
+                          fontSize: 42,
+                          fontWeight: FontWeight.bold,
+                          // decoration: TextDecoration.underline,
+                        ),
                       ),
                     ),
-                    
+
                     const SizedBox(height: 160),
                     // Full Name field
                     TextFormField(
@@ -170,7 +170,8 @@ class _SignUpPageState extends State<SignUpPage> {
                         if (_formKey.currentState?.validate() ?? false) {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => SignInPage()),
+                            MaterialPageRoute(
+                                builder: (context) => SignInPage()),
                           );
                         }
                       },
@@ -204,7 +205,8 @@ class _SignUpPageState extends State<SignUpPage> {
                           onTap: () {
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => SignInPage()),
+                              MaterialPageRoute(
+                                  builder: (context) => SignInPage()),
                             );
                           },
                           child: const Text(
