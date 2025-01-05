@@ -286,9 +286,9 @@ class HomePage extends StatelessWidget {
                               'location': 'Gem City-Rathnapura'
                             },
                             {
-                              'image': 'lib/assets/sambaragamuwa.jpeg',
-                              'title': 'Sabaragamuwa Dance',
-                              'location': 'Gem City-Rathnapura'
+                              'image': 'lib/assets/kathragama.jpg',
+                              'title': 'Katharagama Devalaya',
+                              'location': 'Magampura - Hambantota'
                             },
 
 
