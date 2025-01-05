@@ -107,7 +107,7 @@ class _AllPlacesScreenState extends State<AllPlacesScreen> {
       'name': 'Kanneliya Rain Forest',
       'description':
           'Kanneliya Forest Reserve Experience the feeling of walking in a tropical rain forest.',
-      'image': 'lib/assets/Kanneliya Rain Forest.avif'
+      'image': 'lib/assets/kanneliya.jpg'
     },
     {
       'name': 'sooriyakanda',
@@ -169,16 +169,7 @@ class _AllPlacesScreenState extends State<AllPlacesScreen> {
           "Mulkirigala Raja Maha Vihara (also known as Mulgirigala Raja Maha Vihara) (Sinhala: මුල්කිරිගල රජමහා විහාරය) is an ancient Buddhist temple in Mulkirigala, Sri Lanka. \n\n It has been built on a 205 m (673 ft) high natural rock, surrounded with another four rocks known as Benagala, Kondagala, Bisogala and Seelawathiegala.\n\n  The temple site is located about 2 km (1.2 mi) from the Mulkirigala junction and can be reached from either Dikwella or Tangalle towns. The temple has been formally recognised by the Government as an archaeological site in Sri Lanka. The designation was declared on 8 April 1988 under the government Gazette number 501.",
       'image': 'lib/assets/mulgirigala rajamaha viharaya.jpg'
     },
-    {
-      'name': 'Food',
-      'description': 'Local culinary delights',
-      'image': 'lib/assets/thalpe.jpg'
-    },
-    {
-      'name': 'Culture',
-      'description': 'Traditional cultural sites',
-      'image': 'lib/assets/thalpe.jpg'
-    },
+    
   ];
 
   @override
