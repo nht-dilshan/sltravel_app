@@ -226,12 +226,12 @@ class HomePage extends StatelessWidget {
                               'location': 'Udawalawa'
                             },
                             {
-                              'image': 'lib/assets/udawattakele.jpg',
+                              'image': 'lib/assets/Udawattakele Forest.jpg',
                               'title': 'Udawattakele Forest',
                               'location': 'Kandy'
                             },
                             {
-                              'image': 'lib/assets/ella.jpg',
+                              'image': 'lib/assets/ELLAROCK.jpg',
                               'title': 'Ella Rock',
                               'location': 'Ella'
                             },
@@ -399,7 +399,7 @@ class HomePage extends StatelessWidget {
                             'title': 'Wild Life'
                           },
                           {
-                            'image': 'lib/assets/sigiriya.jpg',
+                            'image': 'lib/assets/sigiriya.jpeg',
                             'title': 'Historical'
                           },
                         ];
