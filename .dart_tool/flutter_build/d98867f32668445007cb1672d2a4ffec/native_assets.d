@@ -1,0 +1,1 @@
+ F:\\UWU\ VLE\\my\ project\\flutter\\SL_Travels\\.dart_tool\\flutter_build\\d98867f32668445007cb1672d2a4ffec\\native_assets.yaml: 

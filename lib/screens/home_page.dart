@@ -79,7 +79,7 @@ class HomePage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 250,
+                height: 230,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('lib/assets/bg1.jpg'),
