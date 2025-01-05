@@ -187,7 +187,7 @@ class HomePage extends StatelessWidget {
                       height: 280,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: 10,
+                        itemCount: 20,
                         itemBuilder: (context, index) {
                           final places = [
                             {
@@ -285,6 +285,12 @@ class HomePage extends StatelessWidget {
                               'title': 'Sabaragamuwa Dance',
                               'location': 'Gem City-Rathnapura'
                             },
+                            {
+                              'image': 'lib/assets/sambaragamuwa.jpeg',
+                              'title': 'Sabaragamuwa Dance',
+                              'location': 'Gem City-Rathnapura'
+                            },
+
 
                           ];
                           final place = places[index];
@@ -381,7 +387,7 @@ class HomePage extends StatelessWidget {
                       physics: const NeverScrollableScrollPhysics(),
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 4,
+                        crossAxisCount: 2,
                         crossAxisSpacing: 10,
                         mainAxisSpacing: 10,
                         childAspectRatio: 0.85,
@@ -389,7 +395,9 @@ class HomePage extends StatelessWidget {
                       itemCount: 4,
                       itemBuilder: (context, index) {
                         final categories = [
-                          {'image': 'lib/assets/beach.jpg', 'title': 'Beach'},
+                          {'image': 'lib/assets/beach.jpg',
+                          'title': 'Beach'
+                          },
                           {
                             'image': 'lib/assets/Udawattakele Forest.jpg',
                             'title': 'Forest'
