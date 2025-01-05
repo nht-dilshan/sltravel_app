@@ -196,50 +196,96 @@ class HomePage extends StatelessWidget {
                               'location': 'Mirissa'
                             },
                             {
-                              'image': 'lib/assets/thalpe.jpg',
+                              'image': 'lib/assets/sigiriya.jpeg',
                               'title': 'Sigiriya Rock',
                               'location': 'Sigiriya'
                             },
                             {
-                              'image': 'lib/assets/thalpe.jpg',
+                              'image': 'lib/assets/sri dalada maligawa.jpg',
                               'title': 'Temple of the Tooth',
                               'location': 'Kandy'
                             },
                             {
-                              'image': 'lib/assets/thalpe.jpg',
+                              'image': 'lib/assets/yala.jpg',
                               'title': 'Yala National Park',
                               'location': 'Yala'
                             },
                             {
-                              'image': 'lib/assets/thalpe.jpg',
+                              'image': 'lib/assets/gall_port.jpg',
                               'title': 'Galle Fort',
                               'location': 'Galle'
                             },
                             {
-                              'image': 'lib/assets/thalpe.jpg',
-                              'title': 'Galle Fort',
-                              'location': 'Galle'
+                              'image': 'lib/assets/nilwella.jpeg',
+                              'title': 'Nilwella Blue Beach',
+                              'location': 'Thangala'
                             },
                             {
-                              'image': 'lib/assets/thalpe.jpg',
-                              'title': 'Galle Fort',
-                              'location': 'Galle'
+                              'image': 'lib/assets/udawalawa.jpg',
+                              'title': 'Udawalawa National Park',
+                              'location': 'Udawalawa'
                             },
                             {
-                              'image': 'lib/assets/thalpe.jpg',
-                              'title': 'Galle Fort',
-                              'location': 'Galle'
+                              'image': 'lib/assets/udawattakele.jpg',
+                              'title': 'Udawattakele Forest',
+                              'location': 'Kandy'
                             },
                             {
-                              'image': 'lib/assets/thalpe.jpg',
-                              'title': 'Galle Fort',
-                              'location': 'Galle'
+                              'image': 'lib/assets/ella.jpg',
+                              'title': 'Ella Rock',
+                              'location': 'Ella'
                             },
                             {
-                              'image': 'lib/assets/thalpe.jpg',
-                              'title': 'Galle Fort',
-                              'location': 'Galle'
+                              'image': 'lib/assets/red_masjid.jpg',
+                              'title': 'Red Masjid',
+                              'location': 'Colombo'
                             },
+                            {
+                              'image': 'lib/assets/mulgirigala rajamaha viharaya.jpg',
+                              'title': 'Mulkirigala Raja Maha Viharaya',
+                              'location': 'Mulkirigala'
+                            },
+                            {
+                              'image': 'lib/assets/sithulpawwa.jpg',
+                              'title': 'Sithulpawwa Rajamaha Viharaya',
+                              'location': 'Sithulpawwa'
+                            },
+                            {
+                              'image': 'lib/assets/ruwanweli seya.jpg',
+                              'title': 'Ruwanmeli Maha Seya ',
+                              'location': 'Anueradhapura'
+                            },
+                            {
+                              'image': 'lib/assets/anuradhapura.jpg',
+                              'title': 'Anuradhapura',
+                              'location': 'Anuradhapura'
+                            },
+                            {
+                              'image': 'lib/assets/little_england.jpg',
+                              'title': 'Littele England',
+                              'location': 'Nuwara Eliya'
+                            },
+                            {
+                              'image': 'lib/assets/theravada buddhism.jpg',
+                              'title': 'Samadhi Buddha Statue',
+                              'location': 'Anuradhapura'
+                            },
+                            {
+                              'image': 'lib/assets/pahatharata.jpg',
+                              'title': 'Pahatharata Dance',
+                              'location': 'Down South'
+                            },
+                            {
+                              'image': 'lib/assets/udarata.jpg',
+                              'title': 'Udatara Dance',
+                              'location': 'Hill Country'
+                            },
+                            {
+                              'image': 'lib/assets/sambaragamuwa.jpeg',
+                              'title': 'Sabaragamuwa Dance',
+                              'location': 'Gem City-Rathnapura'
+                            },
+
                           ];
                           final place = places[index];
                           return GestureDetector(
