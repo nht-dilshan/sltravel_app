@@ -36,7 +36,7 @@ class CategoriesScreen extends StatelessWidget {
       'subtitle': 'Mountain Category'
     },
     {
-      'image': 'lib/assets/c2.jpg',
+      'image': 'lib/assets/village.jpg',
       'title': 'Village',
       'subtitle': 'Village Category'
     },
