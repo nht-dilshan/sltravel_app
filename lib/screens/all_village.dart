@@ -183,7 +183,6 @@ class VillageDetailPage extends StatelessWidget {
             expandedHeight: 300,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(village['name']!),
               background: Hero(
                 tag: village['name']!,
                 child: Image.asset(
@@ -199,8 +198,8 @@ class VillageDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'About',
+                    Text(
+                    village['name']!,
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,

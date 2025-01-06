@@ -179,7 +179,6 @@ class AdventureDetailPage extends StatelessWidget {
             expandedHeight: 300,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text(adventure['name'] ?? 'Adventure'),
               background: Hero(
                 tag: adventure['name'] ?? 'Adventure',
                 child: Image.asset(
@@ -195,13 +194,13 @@ class AdventureDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'About',
+                    Text(
+                    adventure['name'] ?? '',
                     style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
-                  ),
+                    ),
                   SizedBox(height: 8),
                   Text(
                     adventure['description'] ?? '',
