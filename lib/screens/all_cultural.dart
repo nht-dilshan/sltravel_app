@@ -194,9 +194,9 @@ class CulturalDetailPage extends StatelessWidget {
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Hero(
-                tag: site['name']!,
+                tag: site['name'] ?? 'Cultural Site',
                 child: Image.asset(
-                  site['image']!,
+                  site['image'] ?? 'lib/assets/placeholder.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -208,19 +208,36 @@ class CulturalDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    site['name']!,
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.green.shade50,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Text(
+                      site['name'] ?? '',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green.shade800,
+                      ),
                     ),
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    site['description']!,
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey[600],
+                  SizedBox(height: 12),
+                  Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.green.shade200),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      site['description'] ?? '',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.green.shade700,
+                        height: 1.5,
+                      ),
                     ),
                   ),
                 ],

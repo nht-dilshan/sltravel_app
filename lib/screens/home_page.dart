@@ -66,7 +66,6 @@ class HomePage extends StatelessWidget {
                 ),
               ],
             ),
-
           ],
         ),
       ),
@@ -125,6 +124,8 @@ class HomePage extends StatelessWidget {
                             Expanded(
                               child: TextField(
                                 decoration: const InputDecoration(
+                                  filled: true,
+                                  fillColor: Colors.white,
                                   border: InputBorder.none,
                                   hintText: 'Where do you want to go?',
                                 ),
@@ -238,7 +239,8 @@ class HomePage extends StatelessWidget {
                               'location': 'Colombo'
                             },
                             {
-                              'image': 'lib/assets/mulgirigala rajamaha viharaya.jpg',
+                              'image':
+                                  'lib/assets/mulgirigala rajamaha viharaya.jpg',
                               'title': 'Mulkirigala Raja Maha Viharaya',
                               'location': 'Mulkirigala'
                             },
@@ -287,8 +289,6 @@ class HomePage extends StatelessWidget {
                               'title': 'Katharagama Devalaya',
                               'location': 'Magampura - Hambantota'
                             },
-
-
                           ];
                           final place = places[index];
                           return GestureDetector(
@@ -392,9 +392,7 @@ class HomePage extends StatelessWidget {
                       itemCount: 4,
                       itemBuilder: (context, index) {
                         final categories = [
-                          {'image': 'lib/assets/beach.jpg',
-                          'title': 'Beach'
-                          },
+                          {'image': 'lib/assets/beach.jpg', 'title': 'Beach'},
                           {
                             'image': 'lib/assets/Udawattakele Forest.jpg',
                             'title': 'Forest'
@@ -454,7 +452,7 @@ class HomePage extends StatelessWidget {
                                   child: Container(
                                     decoration: BoxDecoration(
                                       borderRadius: BorderRadius.vertical(
-                                          top: Radius.circular(12)),
+                                          top: Radius.circular(20)),
                                       image: DecorationImage(
                                         image: AssetImage(category['image']!),
                                         fit: BoxFit.cover,
@@ -469,7 +467,7 @@ class HomePage extends StatelessWidget {
                                     child: Text(
                                       category['title']!,
                                       style: TextStyle(
-                                        fontSize: 12,
+                                        fontSize: 20,
                                         fontWeight: FontWeight.bold,
                                       ),
                                       textAlign: TextAlign.center,

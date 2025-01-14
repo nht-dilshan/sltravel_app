@@ -196,9 +196,9 @@ class ParkDetailPage extends StatelessWidget {
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Hero(
-                tag: park['name']!,
+                tag: park['name'] ?? 'Park',
                 child: Image.asset(
-                  park['image']!,
+                  park['image'] ?? 'lib/assets/placeholder.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -210,19 +210,36 @@ class ParkDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    park['name']!,
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.green.shade50,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Text(
+                      park['name'] ?? '',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green.shade800,
+                      ),
                     ),
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    park['description']!,
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey[600],
+                  SizedBox(height: 12),
+                  Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.green.shade200),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      park['description'] ?? '',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.green.shade700,
+                        height: 1.5,
+                      ),
                     ),
                   ),
                 ],

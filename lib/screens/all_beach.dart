@@ -190,9 +190,9 @@ class BeachDetailPage extends StatelessWidget {
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
               background: Hero(
-                tag: beach['name']!,
+                tag: beach['name'] ?? 'Beach',
                 child: Image.asset(
-                  beach['image']!,
+                  beach['image'] ?? 'lib/assets/placeholder.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -204,19 +204,36 @@ class BeachDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    beach['name']!,
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.green.shade50,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Text(
+                      beach['name'] ?? '',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green.shade800,
+                      ),
                     ),
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    beach['description']!,
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey[600],
+                  SizedBox(height: 12),
+                  Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.green.shade200),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      beach['description'] ?? '',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.green.shade700,
+                        height: 1.5,
+                      ),
                     ),
                   ),
                 ],

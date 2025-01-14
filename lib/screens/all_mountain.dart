@@ -184,11 +184,10 @@ class MountainDetailPage extends StatelessWidget {
             expandedHeight: 300,
             pinned: true,
             flexibleSpace: FlexibleSpaceBar(
-              //  title: Text(mountain['name']!),
               background: Hero(
-                tag: mountain['name']!,
+                tag: mountain['name'] ?? 'Mountain',
                 child: Image.asset(
-                  mountain['image']!,
+                  mountain['image'] ?? 'lib/assets/placeholder.jpg',
                   fit: BoxFit.cover,
                 ),
               ),
@@ -200,19 +199,36 @@ class MountainDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    mountain['name']!,
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.green.shade50,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Text(
+                      mountain['name'] ?? '',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green.shade800,
+                      ),
                     ),
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    mountain['description']!,
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey[600],
+                  SizedBox(height: 12),
+                  Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.green.shade200),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      mountain['description'] ?? '',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.green.shade700,
+                        height: 1.5,
+                      ),
                     ),
                   ),
                 ],

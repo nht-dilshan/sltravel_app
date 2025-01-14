@@ -134,9 +134,9 @@ class _AllPlacesScreenState extends State<AllPlacesScreen> {
       'image': 'lib/assets/sigiriya.jpg'
     },
     {
-      'name': 'sri dalada maligawa',
+      'name': 'Temple of the Tooth',
       'description':
-          'Sri Dalada Maligawa, commonly known in English as the Temple of the Sacred Tooth Relic, is a Buddhist temple in Kandy, Sri Lanka.\n\n  It is located in the Royal Palace Complex of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha.\n\n  Since ancient times, the relic has played an important role in local politics because it is believed that whoever holds the relic holds the governance of the country. The relic was historically held by Sinhalese kings. The temple of the tooth is a World.',
+          'Temple of the Tooth (Sri Dalada Maligawa), commonly known in English as the Temple of the Sacred Tooth Relic, is a Buddhist temple in Kandy, Sri Lanka.\n\n  It is located in the Royal Palace Complex of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha.\n\n  Since ancient times, the relic has played an important role in local politics because it is believed that whoever holds the relic holds the governance of the country. The relic was historically held by Sinhalese kings. The temple of the tooth is a World.',
       'image': 'lib/assets/sri dalada maligawa.jpg'
     },
     {
@@ -433,19 +433,36 @@ class PlaceDetailPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    place['name']!,
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
+                  Container(
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 12),
+                    decoration: BoxDecoration(
+                      color: Colors.green.shade50,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                    child: Text(
+                      place['name']!,
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green.shade800,
+                      ),
                     ),
                   ),
-                  SizedBox(height: 8),
-                  Text(
-                    place['description']!,
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey[600],
+                  SizedBox(height: 12),
+                  Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      border: Border.all(color: Colors.green.shade200),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      place['description']!,
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.green.shade700,
+                        height: 1.5,
+                      ),
                     ),
                   ),
                 ],
