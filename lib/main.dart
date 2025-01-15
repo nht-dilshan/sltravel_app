@@ -13,6 +13,7 @@ import 'screens/all_historical.dart';
 import 'screens/all_mountain.dart';
 import 'screens/all_village.dart';
 import 'screens/all_wild_life.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -83,7 +84,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => WelcomePage(),
+        '/': (context) => SplashScreen(),
         '/signup': (context) => SignUpPage(),
         '/signin': (context) => SignInPage(),
         '/home': (context) => HomePage(),
