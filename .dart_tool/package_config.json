@@ -329,10 +329,10 @@
       "name": "tdapp",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.5"
+      "languageVersion": "3.2"
     }
   ],
-  "generated": "2025-01-16T07:22:32.330139Z",
+  "generated": "2025-01-16T12:06:19.468367Z",
   "generator": "pub",
   "generatorVersion": "3.6.0",
   "flutterRoot": "file:///C:/dev/flutter",
