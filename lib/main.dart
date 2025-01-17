@@ -15,9 +15,6 @@ import 'screens/all_village.dart';
 import 'screens/all_wild_life.dart';
 import 'screens/splash_screen.dart';
 
-// SHA code: 1d8578f4ec4cd820cd97096df806bd05e075d352
-// Task: Remove all commits and pull requests
-
 void main() {
   runApp(MyApp());
 }
