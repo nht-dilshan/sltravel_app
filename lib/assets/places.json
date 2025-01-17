@@ -29,21 +29,6 @@
       "name": "Swimming with Turtles",
       "description": "Sri Lanka, being an island nation, is surrounded by seas. It has many rivers and waterfalls, making it the perfect place to engage you in different water-based activities which includes some thrilling water sports. If you are someone who loves to dash and have some fun in the water, try out the various adrenaline-pumping and calming water sports in Sri Lanka. No matter how old or young you are, there is something or the other in store for you.",
       "image": "lib/assets/swimming_turtles.jpg"
-    },
-    {
-      "name": "White Water Rafting",
-      "description": "Experience the thrill of white water rafting in the Kelani River at Kitulgala. This adventure activity is suitable for both beginners and experienced rafters. The river features grade 2 and 3 rapids, providing an exhilarating experience amidst the stunning natural scenery.",
-      "image": "lib/assets/white_water_rafting.jpg"
-    },
-    {
-      "name": "Scuba Diving",
-      "description": "Explore the underwater world of Sri Lanka with scuba diving adventures. The coastal waters are home to vibrant coral reefs, shipwrecks, and diverse marine life. Popular diving spots include Hikkaduwa, Unawatuna, and Trincomalee.",
-      "image": "lib/assets/scuba_diving.jpg"
-    },
-    {
-      "name": "Rock Climbing",
-      "description": "Challenge yourself with rock climbing adventures in Sri Lanka. The island offers various climbing spots, including the iconic Sigiriya Rock Fortress and the Knuckles Mountain Range. Whether you are a beginner or an experienced climber, there are routes suitable for all skill levels.",
-      "image": "lib/assets/rock_climbing.jpg"
     }
   ],
   "beaches": [
@@ -86,16 +71,6 @@
       "name": "Nilwella Blue Beach",
       "description": "Blue Beach Island is a beach camping spot in Nilwella, near Dikwella. It is a private island giving amazing views of the sunset in southern Sri Lanka. Many love to camp in the cozy tents here surrounding a blazing campfire. It gives a very unique type of camping experience with the sound of the waves crashing against the shoreline. The experience at Blue Beach Island includes camping at night and snorkelling at sunrise. It is a recent addition to beach and camping adventures in Sri Lanka. It is an isolated island about 50 m away from the mainland which makes it a more secluded area ideal for camping. Camping here also includes a chance to indulge in some amazing seafood dishes, barbecue and various other delicacies.",
       "image": "lib/assets/nilwella.jpeg"
-    },
-    {
-      "name": "Hikkaduwa Beach",
-      "description": "Hikkaduwa Beach is a popular destination on the southwestern coast of Sri Lanka. Known for its vibrant coral reefs, clear waters, and lively atmosphere, Hikkaduwa Beach attracts both local and international tourists. The beach offers a range of activities, including snorkeling, diving, and surfing.",
-      "image": "lib/assets/hikkaduwa.jpg"
-    },
-    {
-      "name": "Arugam Bay",
-      "description": "Arugam Bay is a renowned surf destination located on the southeastern coast of Sri Lanka. The beach is famous for its consistent waves, making it a favorite spot for surfers from around the world. In addition to surfing, visitors can enjoy the laid-back vibe, beautiful sunsets, and local cuisine.",
-      "image": "lib/assets/arugam_bay.jpg"
     }
   ],
   "culturalSites": [
@@ -138,16 +113,6 @@
       "name": "Koneswaram Temple",
       "description": "Koneswaram Temple of Trincomalee or Thirukonamalai Konesar Temple – The Temple of the Thousand Pillars and Dakshina-Then Kailasam (Southern / Ancient Kailash) is a classical-medieval Hindu temple complex in Trincomalee, a Hindu religious pilgrimage centre in Eastern Province, Sri Lanka. The most sacred of the Pancha Ishwarams of Sri Lanka, it was built significantly during the ancient period on top of Konesar Malai, a promontory overlooking Trincomalee District, Gokarna bay and the Indian Ocean. The monument contains its main shrine to Shiva in the form Kona-Ishvara, shortened to Konesar. \n\n The original kovil combined key features to form its basic Dravidian temple plan, such as its thousand pillared hall – 'Aayiram Kaal Mandapam' – and the Jagati. Regarded as the greatest building of its age for its architecture, elaborate sculptural bas-relief ornamentation adorned a black granite megalith while its multiple gold plated gopuram towers were expanded in the medieval period. One of three major Hindu shrines on the promontory with a colossal gopuram tower, it stood distinctly on the cape's highest eminence.",
       "image": "lib/assets/koneswaram_temple.jpg"
-    },
-    {
-      "name": "Gangaramaya Temple",
-      "description": "Gangaramaya Temple is one of the most important temples in Colombo, Sri Lanka. It is a mix of modern architecture and cultural essence. The temple is not only a place of worship but also a center of learning and a museum. The temple's architecture demonstrates an eclectic mix of Sri Lankan, Thai, Indian, and Chinese styles.",
-      "image": "lib/assets/gangaramaya_temple.jpg"
-    },
-    {
-      "name": "Dambulla Cave Temple",
-      "description": "Dambulla Cave Temple, also known as the Golden Temple of Dambulla, is a World Heritage Site in Sri Lanka. It is the largest and best-preserved cave temple complex in the country. The rock towers 160 m over the surrounding plains. There are more than 80 documented caves in the surrounding area. Major attractions are spread over five caves, which contain statues and paintings related to Gautama Buddha and his life.",
-      "image": "lib/assets/dambulla_cave_temple.jpg"
     }
   ],
   "forests": [
@@ -180,16 +145,6 @@
       "name": "Wilpaththu",
       "description": "Wilpattu National Park (Sinhala: විල්පත්තු ජාතික වනෝද්‍යානය) is a national park in Sri Lanka. The unique feature of this park is the existence of 'Willus' (natural lakes) – natural, sand-rimmed water basins or depressions that fill with rainwater. Located on the northwest coast lowland dry zone of Sri Lanka, the park is 30 km (19 mi) west of Anuradhapura and 26 km (16 mi) north of Puttalam (approximately 180 km (110 mi) north of Colombo). The park is 1,317 km2 (508 sq mi) (131,693 hectares) in area and ranges from 0–152 m (0–499 ft) above sea level. Nearly one hundred and six lakes (Willu) and tanks are found spread throughout Wilpattu. Wilpattu is the largest and one of the oldest national parks in Sri Lanka. Wilpattu is world-renowned for its leopard (Panthera pardus kotiya) population. A remote camera survey conducted in Wilpattu from July to October 2015 by the Wilderness and Wildlife Conservation Trust captured photographs of forty-nine individual leopards in the surveyed area, the core area density of which was between that of Yala National Park's Block I and Horton Plains National Park. \n\n A second, more extensive camera trap survey was conducted from May to September 2018 by Samarasinghe et al. (2022), covering a substantial area of the national park, approximately 660 km2, and capturing a total of 133 individual leopards.[3] This count comprised 116 independent leopards (aged over 2 years) and 17 cubs. Eight adult females were observed with 1–2 cubs during the study. Utilizing Bayesian spatial capture-recapture models, the population density of leopards in Wilpattu National Park was estimated to be 18 leopards per 100 km2. The mean abundance (N) within the effectively sampled area was calculated to be 144 leopards. Notably, the national park maintains a healthy sex ratio of male to female leopards, estimated to be 1:2.03.",
       "image": "lib/assets/wilpaththu.jpg"
-    },
-    {
-      "name": "Horton Plains",
-      "description": "Horton Plains National Park is a protected area in the central highlands of Sri Lanka and is covered by montane grassland and cloud forest. This plateau at an altitude of 2,100–2,300 metres (6,900–7,500 ft) is rich in biodiversity and many species found here are endemic to the region. The park is a popular tourist destination and is situated 8 kilometres (5.0 mi) from Ohiya, 6 kilometres (3.7 mi) from the world-famous Ohiya Gap/Dondra Watch and 32 kilometres (20 mi) from Nuwara Eliya.",
-      "image": "lib/assets/horton_plains.jpg"
-    },
-    {
-      "name": "Knuckles Forest Reserve",
-      "description": "The Knuckles Mountain Range, also known as the Knuckles Massif, is a mountain range in central Sri Lanka. The range takes its name from a series of recumbent folds and peaks in the west of the massif which resemble the knuckles of a clenched fist when viewed from certain locations in the Kandy District. The Knuckles Forest Reserve is a UNESCO World Heritage Site and is known for its rich biodiversity and scenic beauty.",
-      "image": "lib/assets/knuckles_forest.jpg"
     }
   ],
   "historicalSites": [
@@ -242,16 +197,6 @@
       "name": "Matara Church",
       "description": "Shrine of Our Lady of Matara is a Roman Catholic church devoted to the Virgin Mary, in the town of Matara, Sri Lanka. The shrine houses a statue of the Virgin Mary holding the infant Jesus. Though the statue's origins are unknown, church officials claim that it is 400 years old. The statue has been damaged, lost and recovered more than once, most recently during the 2004 tsunami in Asia, which damaged the shrine and killed 24 people attending Sunday Mass. The church celebrated its centenary year in 2007. \n\n Church legend claims that a large wooden crate was hauled out of the sea by Weligama fishermen. When it was opened, the statue was found inside, untouched by seawater. The fishermen handed it over to the parish priest and the statue was placed in St. Mary's Church in Matara. At a later period[when?], during a cholera epidemic which claimed hundreds of lives, Catholics prayed before the statue to be delivered from the disease. The statue was taken in a solemn procession through the streets of Matara. After a few days, the area was declared safe by the health authorities and there were no further officially reported deaths. Since then the Catholics of Matara have attributed miraculous powers to the intercession of the Blessed Virgin Mary.\n\n In the early 1900s, after over 300 years in the church of Matara, the statue looked faded and worn due to exposure and the thousands of devotees touching and kissing it. Arrangements were made with a sculptor in Ghent, Belgium, to renovate the statue.",
       "image": "lib/assets/matara_church.jpg"
-    },
-    {
-      "name": "Jaffna Fort",
-      "description": "Jaffna Fort is a fort built by the Portuguese at Jaffna, Sri Lanka, in 1618 under Phillippe de Oliveira following the Portuguese invasion of Jaffna. It was captured by the Dutch under Rijcklof van Goens in 1658 who expanded it. The British took over the fort in 1795. The fort is located near Karaiyur.",
-      "image": "lib/assets/jaffna_fort.jpg"
-    },
-    {
-      "name": "Yapahuwa",
-      "description": "Yapahuwa is an ancient fortress and capital built by King Bhuvanekabahu I in the year 1272. The rock fortress complex is situated in the Wayamba province of Sri Lanka, lying midway between Kurunegala and Anuradhapura. Yapahuwa served as the capital of Sri Lanka in the latter part of the 13th century (1272–1284). Built on a huge, 90-metre-high (300 ft) rock boulder in the style of the Sigiriya rock fortress, Yapahuwa was a palace and military stronghold against foreign invaders.",
-      "image": "lib/assets/yapahuwa.jpg"
     }
   ],
   "mountains": [
@@ -278,22 +223,3 @@
     {
       "name": "haggala",
       "description": " Hakgala is a mountain situated in the Nuwara Eliya district of Sri Lanka at 2,169 m (7,116 ft) above mean sea level, most parts of the mountain are covered with forest belonging to Hakgala Strict Nature Reserve.\n\n  Hakgala Botanical Garden is situated on the northeastern slope of the Hakgala Mountain. The southwestern side of the mountain has a wet climate compared to the northeastern slope since the southwestern part faces directly to the southwest Monsoon.",
-      "image": "lib/assets/haggala.jpg"
-    },
-    {
-      "name": "Ella Rock",
-      "description": "Ella Rock is a popular hiking destination located in the small town of Ella in Sri Lanka. The hike to Ella Rock offers stunning views of the surrounding countryside, tea plantations, and the famous Ella Gap. The trail is well-marked and takes about 2-3 hours to reach the summit.",
-      "image": "lib/assets/ella_rock.jpg"
-    },
-    {
-      "name": "Adam's Peak",
-      "description": "Adam's Peak, also known as Sri Pada, is a 2,243 m (7,359 ft) tall conical mountain located in central Sri Lanka. It is well known for the Sri Pada (sacred footprint), a 1.8 m (5 ft 11 in) rock formation near the summit. The mountain is a pilgrimage site for Buddhists, Hindus, Muslims, and Christians.",
-      "image": "lib/assets/adams_peak.jpg"
-    },
-    {
-      "name": "Kirigalpoththa",
-      "description": "Kirigalpoththa is the second highest mountain in Sri Lanka, with an elevation of 2,388 m (7,835 ft). It is located in the Horton Plains National Park and is a popular hiking destination. The trail to the summit offers breathtaking views of the surrounding landscape and diverse flora and fauna.",
-      "image": "lib/assets/kirigalpoththa.jpg"
-    }
-  ]
-}
