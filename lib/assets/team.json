@@ -1,0 +1,29 @@
+{
+  "team": [
+    {
+      "name": "John Doe",
+      "role": "Project Manager",
+      "photo": "lib/assets/john_doe.jpg"
+    },
+    {
+      "name": "Jane Smith",
+      "role": "Lead Developer",
+      "photo": "lib/assets/jane_smith.jpg"
+    },
+    {
+      "name": "Emily Johnson",
+      "role": "UI/UX Designer",
+      "photo": "lib/assets/emily_johnson.jpg"
+    },
+    {
+      "name": "Michael Brown",
+      "role": "Backend Developer",
+      "photo": "lib/assets/michael_brown.jpg"
+    },
+    {
+      "name": "Sarah Davis",
+      "role": "Frontend Developer",
+      "photo": "lib/assets/sarah_davis.jpg"
+    }
+  ]
+}

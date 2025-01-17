@@ -66,9 +66,9 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
-              Color(0xFF4CAF50),  // A vibrant green
-              Color(0xFF81C784),  // A lighter shade
-              Color(0xFFA5D6A7),  // An even lighter shade
+              Color(0xFF00C853),  // A vibrant green
+              Color(0xFF64DD17),  // A lighter shade
+              Color(0xFFB2FF59),  // An even lighter shade
             ],
           ),
         ),

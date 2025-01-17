@@ -147,7 +147,7 @@ class _SignInPageState extends State<SignInPage> {
                         }
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
+                        backgroundColor: Color(0xFF4CAF50), // A more vibrant shade of green
                         padding: const EdgeInsets.symmetric(vertical: 16),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
@@ -159,7 +159,7 @@ class _SignInPageState extends State<SignInPage> {
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
-                          color: Colors.green,
+                          color: Colors.white,
                         ),
                       ),
                     ),

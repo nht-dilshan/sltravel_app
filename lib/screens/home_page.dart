@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFF4CAF50), // A more vibrant shade of green
         elevation: 0,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                   child: Text(
                     'Popular',
                     style: TextStyle(
-                      color: Colors.green[900],
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
                   child: Text(
                     'All places',
                     style: TextStyle(
-                      color: Colors.grey[600],
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
                   child: Text(
                     'Categories',
                     style: TextStyle(
-                      color: Colors.grey[600],
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -178,6 +178,7 @@ class HomePage extends StatelessWidget {
                                     style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
+                                      color: Colors.black,
                                     ),
                                   ),
                                   Text(
@@ -282,6 +283,7 @@ class HomePage extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
+                                  color: Colors.black,
                                 ),
                               ),
                               TextButton(
@@ -375,6 +377,7 @@ class HomePage extends StatelessWidget {
                                             style: TextStyle(
                                               fontSize: 20,
                                               fontWeight: FontWeight.bold,
+                                              color: Colors.black,
                                             ),
                                             textAlign: TextAlign.center,
                                             maxLines: 1,

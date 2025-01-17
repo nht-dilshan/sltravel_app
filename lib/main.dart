@@ -26,10 +26,10 @@ class MyApp extends StatelessWidget {
       title: 'Travel App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.green[900],
+        primaryColor: Color(0xFF4CAF50), // A more vibrant shade of green
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: Colors.green[900],
-          secondary: Colors.green[600],
+          primary: Color(0xFF4CAF50), // A more vibrant shade of green
+          secondary: Color(0xFF81C784), // A complementary color
         ),
         scaffoldBackgroundColor: Colors.white,
         textTheme: TextTheme(
@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
-            borderSide: BorderSide(color: Colors.green[900]!),
+            borderSide: BorderSide(color: Color(0xFF4CAF50)), // A more vibrant shade of green
           ),
           errorBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
@@ -74,7 +74,7 @@ class MyApp extends StatelessWidget {
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.green[900],
+            backgroundColor: Color(0xFF4CAF50), // A more vibrant shade of green
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),

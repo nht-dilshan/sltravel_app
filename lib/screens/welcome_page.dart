@@ -38,6 +38,7 @@ class WelcomePage extends StatelessWidget {
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
+                color: Colors.black, // Updated text color
               ),
               textAlign: TextAlign.center,
             ),
@@ -64,7 +65,7 @@ class WelcomePage extends StatelessWidget {
             SizedBox(height: 30),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
+                backgroundColor: Color(0xFF4CAF50), // Updated button color
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
@@ -103,7 +104,7 @@ class WelcomePage extends StatelessWidget {
                     'SIGN IN',
                     style: TextStyle(
                       fontSize: 18,
-                      color: Colors.green,
+                      color: Color(0xFF4CAF50), // Updated text color
                       fontWeight: FontWeight.bold,
                     ),
                   ),
