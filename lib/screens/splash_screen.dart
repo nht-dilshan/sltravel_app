@@ -23,7 +23,26 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset('lib/assets/splash_image.png'), // Replace with your splash image path
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(
+              Icons.airplanemode_active,
+              size: 100,
+              color: Colors.green[900],
+            ),
+            SizedBox(height: 20),
+            Text(
+              'Plan Your Trip',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.green[900],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
