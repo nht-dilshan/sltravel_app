@@ -10,7 +10,22 @@ A Flutter-based mobile application designed to explore popular travel destinatio
 - 🕒 **Plan Trips**: Create and manage travel itineraries.
 
 ## Screenshots
-*(Include some screenshots of your app here)*
+<div align="center">
+  <img src="/App ss/1.jpg"  />
+</div>
+
+<div align="center">
+  <img src="/App ss/2.jpg"  />
+</div>
+<div align="center">
+  <img src="/App ss/3.jpg"  />
+</div>
+<div align="center">
+  <img src="/App ss/4.jpg"  />
+</div>
+<div align="center">
+  <img src="/App ss/5.jpg"  />
+</div>
 
 ## Tech Stack
 - **Framework**: Flutter
