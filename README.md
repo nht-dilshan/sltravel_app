@@ -11,20 +11,23 @@ A Flutter-based mobile application designed to explore popular travel destinatio
 
 ## Screenshots
 <div align="center">
-  <img src="/App ss/1.jpg"  />
+  <img src="/App ss/1.jpg" width="300" />
 </div>
 
 <div align="center">
-  <img src="/App ss/2.jpg"  />
+  <img src="/App ss/2.jpg" width="300" />
 </div>
+
 <div align="center">
-  <img src="/App ss/3.jpg"  />
+  <img src="/App ss/3.jpg" width="300" />
 </div>
+
 <div align="center">
-  <img src="/App ss/4.jpg"  />
+  <img src="/App ss/4.jpg" width="300" />
 </div>
+
 <div align="center">
-  <img src="/App ss/5.jpg"  />
+  <img src="/App ss/5.jpg" width="300" />
 </div>
 
 ## Tech Stack
